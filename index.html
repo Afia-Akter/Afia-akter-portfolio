@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="head">
+				<div class="logo"></div>
+				<div class="menu">
+					<ul>
+						<li>
+							<a
+								onclick="document.getElementById('hro').style.display='block',document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='none',document.getElementById('con-dis').style.display='none'"
+								href="#"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a
+								onclick="document.getElementById('hro').style.display='none',document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='block',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='none',document.getElementById('con-dis').style.display='none'"
+								href="#"
+								>About</a
+							>
+						</li>
+						<li>
+							<a
+								onclick="document.getElementById('hro').style.display='none',document.getElementById('sk-dis').style.display='block', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='none',document.getElementById('con-dis').style.display='none'"
+								href="#"
+								>Skills</a
+							>
+						</li>
+						<li>
+							<a
+								onclick="document.getElementById('hro').style.display='none',document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='block',document.getElementById('prt-dis').style.display='none',getElementById('con-dis').style.display='none'"
+								href="#"
+								>Services</a
+							>
+						</li>
+						<li>
+							<a
+								onclick="document.getElementById('hro').style.display='none',document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='block',getElementById('con-dis').style.display='none'"
+								href="#"
+								>Portfolio</a
+							>
+						</li>
+						<li>
+							<a
+								onclick="document.getElementById('hro').style.display='none',document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='none',getElementById('con-dis').style.display='block'"
+								href="#"
+								>Contacts</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="hero" id="hro">
+				<h3>Hello, Welcome To My Space</h3>
+				<p>I'm Afia,<b> a Front-End Developer</b></p>
+				<button
+					onclick="document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='block',getElementById('con-dis').style.display='none'"
+					class="port btn"
+				>
+					Portfolio
+				</button>
+				<button
+					onclick="document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='none',getElementById('con-dis').style.display='block'"
+					class="btn"
+				>
+					Contact Me
+				</button>
+			</div>
+			<div class="abut pdng" id="abut-dis">
+				<div class="title">
+					<h2>About Myself</h2>
+				</div>
+				<div class="txt">
+					<p>
+						Hi, I'm Afia from Kushtia, Bangladesh. I'm a
+						<b>front-end developer</b>. I usually deal with the
+						<b>visible part of the website.</b> I'm working as a<b>
+							freelancer</b
+						>
+						and enjoy my work very much. My key sterngths are
+						<b>visual and user friendly design</b> with <b>WordPress</b> and<b>
+							coding skills.</b
+						>
+						<br />I've experiance of <b>2 years</b> in this field. But
+						technologies are changing each and every moment! I love to<b>
+							update</b
+						>
+						myself with new technologies.<br />I like to work honestly and
+						believe that how you design your website can
+						<b>make or break </b> your business.
+					</p>
+				</div>
+				<div class="imge">
+					<img src="images/hbg2.jpg" alt="It's me" />
+				</div>
+			</div>
+			<div class="pdng" id="sk-dis">
+				<div class="title">
+					<h2>Skills & Education</h2>
+				</div>
+				<div class="parent">
+					<div class="skill">
+						<h3 class="sbhding">Skills</h3>
+						<span class="disc"> </span>
+						<p>HTML</p>
+						<div class="ht"><div class="ht2 progres"></div></div>
+						<p>CSS</p>
+						<div class="ht"><div class="cs progres"></div></div>
+						<p>WordPress</p>
+						<div class="ht"><div class="ht2 progres"></div></div>
+						<p>C++</p>
+						<div class="ht"><div class="c progres"></div></div>
+						<p>Js</p>
+						<div class="ht"><div class="js progres"></div></div>
+					</div>
+					<div class="edu">
+						<h3 class="sbhding2">Education</h3>
+						<span class="disc dpos1"></span>
+
+						<p>
+							B. Sc. Engineering in ICT<br />
+							Islamic University, Kushtia Bangladesh <br />
+							(2014-2018)
+						</p>
+
+						<h3 class="sbhding">Web Development Training</h3>
+						<span class="disc dpos2"></span>
+
+						<p>
+							Learning & Earning Development Project<br />
+							ICT ministry, Bangladesh <br />
+							2020
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="srvc pdng" id="srv-dis">
+				<!-- <div class="title">
+                <h2 >Services</h2>
+            </div> -->
+				<div class="parent">
+					<div class="srvbg">
+						<!-- <img src="images/front-end-development.jpg" alt=""> -->
+					</div>
+					<div class="srvbg txtbg">
+						<p id="txtsp">Front-End Design With <br /></p>
+						<p id="wp"><b>WordPress</b></p>
+						<span class="disc" id="one"></span>
+						<p>I can customize WordPress themes and plugins.</p>
+						<span class="disc" id="two"></span>
+						<p id="code"><b>Coding</b></p>
+						<p>I can develop front-end with HTML, CSS and Js</p>
+					</div>
+				</div>
+			</div>
+			<div class="portfolio pdng" id="prt-dis">
+				<div class="title">
+					<h2>Portfolio</h2>
+				</div>
+				<div class="parent">
+					<div class="prtimg impos1">
+						<img src="images/Contest.png" alt="" />
+					</div>
+					<div class="prtimg impos2">
+						<img src="images/DNK-–-Just-another-WordPress-site.png" alt="" />
+					</div>
+					<div class="prtimg impos3">
+						<img src="images/University.png" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="contact pdng" id="con-dis">
+				<p>Wanna Reach Me?</p>
+
+				<div class="parent">
+					<div class="icon">
+						<h3>Contact Pleasse . . .</h3>
+						<a href=""> <img src="images/mail.jpg" alt="" /></a>
+						<a href=""><img src="images/fb.png" alt="" /></a>
+						<a href=""><img src="images/twitter.jpg" alt="" /></a>
+						<a href=""> <img src="images/in.png" alt="" /></a><br />
+						<a href=""><img src="images/pin.jpg" alt="" /></a>
+						<a href=""><img src="images/up.png" alt="" /></a>
+						<a href=""><img src="images/freelancer.png" alt="" /></a>
+						<a href=""><img src="images/fiverr.jpg" alt="" /></a>
+					</div>
+					<div class="location">
+						<img src="images/kushtia.png" alt="" />
+					</div>
+				</div>
+			</div>
+
+			<div class="footer">
+				<p>copyright@ 2021</p>
+			</div>
+		</div>
+	</body>
+</html>
