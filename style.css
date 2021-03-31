@@ -42,6 +42,7 @@ body {
 .menu ul li {
 	display: inline;
 	margin-right: 20px;
+	margin-bottom: 5px;
 }
 .menu ul li a {
 	color: white;
@@ -224,17 +225,17 @@ body {
 	background-color: #f5d2e2;
 }
 .prtimg {
-	height: 300px;
+	height: 450px;
 	background-color: lightcoral;
 	position: relative;
-	flex-basis: 300px;
+	flex-basis: 400px;
 	overflow: auto;
 	margin: 40px auto;
 }
 .prtimg img {
 	position: absolute;
 	left: 0px;
-	width: 300px;
+	width: 400px;
 	height: 230vh;
 }
 .parent {
@@ -262,7 +263,7 @@ body {
 	margin-top: 30px;
 }
 .srvc {
-	background-image: url(images/front-end-development.jpg),
+	background-image: url(images/Ra08f515a8ee4dc5f6be0b6b5fbf50cbe.png),
 		linear-gradient(rgba(235, 111, 183, 0.753), rgba(245, 146, 195, 0.849));
 	padding: 187px 55px;
 	background-blend-mode: overlay;
@@ -279,7 +280,7 @@ body {
 	color: white;
 }
 .txtbg {
-	background-color: #141314b4;
+	background-color: #141314d2;
 	box-shadow: 2px 2px rgb(61, 60, 60);
 }
 .srvbg img {
@@ -318,7 +319,7 @@ body {
 	background-color: #ec5578;
 }
 .footer p {
-	padding-top: 25px;
+	padding-top: 43px;
 	color: white;
 }
 #abut-dis {
@@ -349,20 +350,29 @@ body {
 	}
 	.head {
 		display: flex;
+		height: auto;
 	}
 	.menu {
 		text-align: left;
-		margin: auto;
-		/* display: none; */
 	}
 	#hi {
 		display: none;
 	}
 	.menu ul li {
-		margin: auto;
+		margin: 35px auto;
+		line-height: 5px;
+	}
+	.menu ul li a:hover {
+		color: black;
+		border-color: transparent;
+		background-color: transparent;
 	}
 	.mob-menu {
 		display: block;
+	}
+	.hero {
+		padding-bottom: 50px;
+		height: 600px;
 	}
 	.txt {
 		width: 100%;
@@ -382,25 +392,36 @@ body {
 	.disc {
 		display: none;
 	}
+	.ht {
+		margin: 5px 30px;
+	}
+	.skill p {
+		margin-left: 35px;
+	}
 	.edu {
 		height: auto;
 		/* padding-top: 30px; */
 	}
 	.edu p {
-		margin: 0px 20px;
+		margin: 0px 35px;
 	}
 	.sbhding {
-		margin: 30px 0px 10px -10px;
+		margin: 30px 0px 10px -50px;
 	}
 	.sbhding2 {
-		margin: 30px 0px 10px -160px;
+		margin: 30px 0px 10px -195px;
 	}
 	.srvc {
-		padding-bottom: 20px;
-		background-size: auto;
+		padding: 50px 0px;
+		background: none;
+		background-color: #f58da5;
 	}
 	.srvbg {
 		flex-basis: 100%;
+		padding: 0px 30px;
+	}
+	#txtsp {
+		padding-top: 90px;
 	}
 	.srvbg-dis {
 		display: none;
@@ -432,7 +453,7 @@ body {
 		margin-bottom: 10px;
 	}
 	.location img {
-		width: 300px;
+		width: 400px;
 		height: 300px;
 	}
 }
