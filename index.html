@@ -4,39 +4,39 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="assets/style.css" />
 		<title>Afia's portfolio</title>
 	</head>
 	<body>
 		<div class="wrapper">
 			<div class="head">
-				<div
-					class="mob-menu"
-					onclick="document.getElementById('hi').style.display='block'"
-				>
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
-				<div class="menu" id="hi">
+				<input type="checkbox" id="check" />
+				<label for="check" class="checkbtn">
+					<div class="mob-menu">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</label>
+				<div class="menu" id="menu-dis">
 					<ul>
 						<li>
 							<a
-								onclick="document.getElementById('hro').style.display='block',document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='none',document.getElementById('con-dis').style.display='none'"
+								onclick="document.getElementById('hro').style.display='block',document.getElementById('sk-dis').style.display='block', document.getElementById('abut-dis').style.display='block',document.getElementById('srv-dis').style.display='block',document.getElementById('prt-dis').style.display='block',document.getElementById('con-dis').style.display='block'"
 								href="#"
 								>Home</a
 							>
 						</li>
 						<li>
 							<a
-								onclick="document.getElementById('hro').style.display='none',document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='block',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='none',document.getElementById('con-dis').style.display='none'"
+								onclick="document.getElementById('hro').style.display='none',document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='flex',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='none',document.getElementById('con-dis').style.display='none'"
 								href="#"
 								>About</a
 							>
 						</li>
 						<li>
 							<a
-								onclick="document.getElementById('hro').style.display='none',document.getElementById('sk-dis').style.display='block', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='none',document.getElementById('con-dis').style.display='none'"
+								onclick="document.getElementById('hro').style.display='none',document.getElementById('sk-dis').style.display='flex', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='none',document.getElementById('con-dis').style.display='none'"
 								href="#"
 								>Skills</a
 							>
@@ -50,18 +50,19 @@
 						</li>
 						<li>
 							<a
-								onclick="document.getElementById('hro').style.display='none',document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='block',getElementById('con-dis').style.display='none'"
+								onclick="document.getElementById('hro').style.display='none',document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='flex',getElementById('con-dis').style.display='none'"
 								href="#"
 								>Portfolio</a
 							>
 						</li>
 						<li>
 							<a
-								onclick="document.getElementById('hro').style.display='none',document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='none',getElementById('con-dis').style.display='block'"
+								onclick="document.getElementById('hro').style.display='none',document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='none',getElementById('con-dis').style.display='flex'"
 								href="#"
 								>Contacts</a
 							>
 						</li>
+						<img src="assets/images/moon.png" id="headicon" class="hdicn" />
 					</ul>
 				</div>
 			</div>
@@ -69,162 +70,202 @@
 				<h3>Hello, Welcome To My Space</h3>
 				<p>I'm Afia,<b> a Front-End Developer</b></p>
 				<button
-					onclick="document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='block',getElementById('con-dis').style.display='none'"
+					onclick="document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='flex',getElementById('con-dis').style.display='none'"
 					class="port btn"
 				>
 					Portfolio
 				</button>
 				<button
-					onclick="document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='none',getElementById('con-dis').style.display='block'"
+					onclick="document.getElementById('sk-dis').style.display='none', document.getElementById('abut-dis').style.display='none',document.getElementById('srv-dis').style.display='none',document.getElementById('prt-dis').style.display='none',getElementById('con-dis').style.display='flex'"
 					class="btn"
 				>
 					Contact Me
 				</button>
 			</div>
 			<div class="abut pdng" id="abut-dis">
-				<div class="title">
-					<h2>About Myself</h2>
-				</div>
-				<div class="txt">
-					<p>
-						Hi, I'm Afia from Kushtia, Bangladesh. I'm a
-						<b>front-end developer</b>. I usually deal with the
-						<b>visible part of the website.</b> I'm working as a<b>
-							freelancer</b
-						>
-						and enjoy my work very much. My key sterngths are
-						<b>visual and user friendly design</b> with <b>WordPress</b> and<b>
-							coding skills.</b
-						>
-						<br />I've experiance of <b>2 years</b> in this field. But
-						technologies are changing each and every moment! I love to<b>
-							update</b
-						>
-						myself with new technologies.<br />I like to work honestly and
-						believe that how you design your website can
-						<b>make or break </b> your business.
-					</p>
-				</div>
-				<div class="imge">
-					<img src="images/profileimg.png" alt="It's me" />
+				<div id="adjust">
+					<div class="title marg">
+						<h2>About Myself</h2>
+					</div>
+					<div class="parent">
+						<div class="txt">
+							<p>
+								Hi, I'm Afia from Kushtia, Bangladesh. I'm a
+								<b>front-end developer</b>. I usually deal with the
+								<b>visible part of the website.</b> I'm working as a<b>
+									freelancer</b
+								>
+								and enjoy my work very much. My key sterngths are
+								<b>visual and user friendly design</b> with
+								<b>WordPress</b> and<b> coding skills.</b> <br />I've experiance
+								of <b>2 years</b> in this field. But technologies are changing
+								each and every moment! I love to<b> update</b> myself with new
+								technologies.<br />I like to work honestly and believe that how
+								you design your website can <b>make or break </b> your business.
+							</p>
+						</div>
+						<div class="imge">
+							<img src="assets/images/profileimg.png" alt="It's me" />
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="pdng" id="sk-dis">
-				<div class="title">
-					<h2>Skills & Education</h2>
-				</div>
-				<div class="parent">
-					<div class="skill">
-						<h3 class="sbhding">Skills</h3>
-						<span class="disc"> </span>
-						<p>HTML</p>
-						<div class="ht"><div class="ht2 progres"></div></div>
-						<p>CSS</p>
-						<div class="ht"><div class="cs progres"></div></div>
-						<p>WordPress</p>
-						<div class="ht"><div class="ht2 progres"></div></div>
-						<p>C++</p>
-						<div class="ht"><div class="c progres"></div></div>
-						<p>Js</p>
-						<div class="ht"><div class="js progres"></div></div>
+			<div class="pdng skedu" id="sk-dis">
+				<div id="adjust">
+					<div class="title">
+						<h2>Skills & Education</h2>
 					</div>
-					<div class="edu">
-						<h3 class="sbhding2">Education</h3>
-						<span class="disc dpos1"></span>
+					<div class="parent">
+						<div class="skill">
+							<h3 class="sbhding">Skills</h3>
+							<span class="disc"> </span>
+							<p>HTML</p>
+							<div class="ht"><div class="ht2 progres"></div></div>
+							<p>CSS</p>
+							<div class="ht"><div class="cs progres"></div></div>
+							<p>WordPress</p>
+							<div class="ht"><div class="ht2 progres"></div></div>
+							<p>C++</p>
+							<div class="ht"><div class="c progres"></div></div>
+							<p>Js</p>
+							<div class="ht"><div class="js progres"></div></div>
+						</div>
+						<div class="edu">
+							<h3 class="sbhding2">Education</h3>
+							<span class="disc dpos1"></span>
 
-						<p>
-							B. Sc. Engineering in ICT<br />
-							Islamic University, Kushtia Bangladesh <br />
-							(2014-2018)
-						</p>
+							<p>
+								B. Sc. (engineering) in ICT<br />
+								Islamic University, Kushtia Bangladesh <br />
+								(2014-2018)
+							</p>
 
-						<h3 class="sbhding">Web Development Training</h3>
-						<span class="disc dpos2"></span>
+							<h3 class="sbhding">Web Development Training</h3>
+							<span class="disc dpos2"></span>
 
-						<p>
-							Learning & Earning Development Project<br />
-							ICT ministry, Bangladesh <br />
-							2020
-						</p>
+							<p>
+								Learning & Earning Development Project<br />
+								ICT ministry, Bangladesh <br />
+								2020
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="srvc pdng" id="srv-dis">
-				<!-- <div class="title">
-                <h2 >Services</h2>
-            </div> -->
-				<div class="parent">
-					<div class="srvbg srvbg-dis">
-						<!-- <img src="images/front-end-development.jpg" alt=""> -->
+				<div id="adjust">
+					<div class="title">
+						<h2>Services</h2>
 					</div>
-					<div class="srvbg txtbg">
-						<p id="txtsp">Front-End Design With <br /></p>
-						<p id="wp"><b>WordPress</b></p>
-						<span class="disc" id="one"></span>
-						<p>I can customize WordPress themes and plugins.</p>
-						<span class="disc" id="two"></span>
-						<p id="code"><b>Coding</b></p>
-						<p>I can develop front-end with HTML, CSS and Js</p>
+					<div class="parent">
+						<div class="srv-sec srv-hov srv-clr">
+							<h3>
+								Custom <br />
+								Design
+							</h3>
+							<p>
+								How you design your website can define the future of your
+								business groth. So I try my best to provide you the best quality
+								design. It highlights your business and let your dreams come
+								true.
+							</p>
+						</div>
+						<div class="srv-sec srv-clr2">
+							<h3>Custom Development</h3>
+							<p>
+								High quality effecient code may be a great start. It helps to
+								make your website userfriendly, fast and secure. I like to focus
+								on every details to make your website excellent.
+							</p>
+						</div>
+						<div class="srv-sec srv-hov srv-clr">
+							<h3>
+								Content <br />
+								Migration
+							</h3>
+							<p>
+								You may need to migrate all contents in Wordpress. No matter
+								where you built your precious website. I can import all
+								informations into WordPress.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="portfolio pdng" id="prt-dis">
-				<div class="title">
-					<h2>Portfolio</h2>
-				</div>
-				<div class="parent">
-					<div class="prtimg impos1">
-						<img src="images/Contest.png" alt="" />
+				<div id="adjust">
+					<div class="title">
+						<h2>Portfolio</h2>
 					</div>
-					<div class="prtimg impos2">
-						<img src="images/Real-Estate.png" alt="" />
-					</div>
-					<div class="prtimg impos3">
-						<img src="images/picaboo.png" alt="" />
+					<div class="parent">
+						<div class="prtimg impos1">
+							<img src="assets/images/Contest.png" alt="" />
+						</div>
+						<div class="prtimg impos2">
+							<img src="assets/images/Real-Estate.png" alt="" />
+						</div>
+						<div class="prtimg impos3">
+							<img src="assets/images/picaboo.png" alt="" />
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="contact pdng" id="con-dis">
-				<p>Wanna Reach Me?</p>
+				<div id="adjust">
+					<p>Wanna Reach Me?</p>
 
-				<div class="parent">
-					<div class="icon">
-						<h3>Contact Pleasse . . .</h3>
-						<a href="https://mail.google.com/mail/u/0/#inbox">
-							<img src="images/mail.jpg" alt=""
-						/></a>
-						<a
-							href="https://www.facebook.com/profile.php?id=100056777630503&viewas=&show_switched_toast=false"
-							><img src="images/fb.png" alt=""
-						/></a>
-						<a href="https://twitter.com/AfiaAkter8"
-							><img src="images/twitter.jpg" alt=""
-						/></a>
-						<a href="https://www.linkedin.com/in/afia-akter-0b39541b5/">
-							<img src="images/in.png" alt="" /></a
-						><br />
-						<a href="https://www.pinterest.com/afiawebdev/_saved/"
-							><img src="images/pin.jpg" alt=""
-						/></a>
-						<a href="https://www.upwork.com/freelancers/~0123207902fa898cdf"
-							><img src="images/up.png" alt=""
-						/></a>
-						<a href="https://www.freelancer.com/u/afiaakter1"
-							><img src="images/freelancer.png" alt=""
-						/></a>
-						<a href="https://www.fiverr.com/"
-							><img src="images/fiverr.jpg" alt=""
-						/></a>
-					</div>
-					<div class="location">
-						<img src="images/kushtia.png" alt="" />
+					<div class="parent">
+						<div class="icon">
+							<h3>Contact Pleasse . . .</h3>
+							<a href="https://mail.google.com/mail/u/0/#inbox">
+								<img src="assets/images/mail.jpg" alt=""
+							/></a>
+							<a
+								href="https://www.facebook.com/profile.php?id=100056777630503&viewas=&show_switched_toast=false"
+								><img src="assets/images/fb.png" alt=""
+							/></a>
+							<a href="https://twitter.com/AfiaAkter8"
+								><img src="assets/images/twitter.jpg" alt=""
+							/></a>
+							<a href="https://www.linkedin.com/in/afia-akter-0b39541b5/">
+								<img src="assets/images/in.png" alt="" /></a
+							><br />
+							<a href="https://www.pinterest.com/afiawebdev/_saved/"
+								><img src="assets/images/pin.jpg" alt=""
+							/></a>
+							<a href="https://www.upwork.com/freelancers/~0123207902fa898cdf"
+								><img src="assets/images/up.png" alt=""
+							/></a>
+							<a href="https://www.freelancer.com/u/afiaakter1"
+								><img src="assets/images/freelancer.png" alt=""
+							/></a>
+							<a href="https://www.fiverr.com/"
+								><img src="assets/images/fiverr.jpg" alt=""
+							/></a>
+						</div>
+						<div class="location">
+							<img src="assets/images/kushtia.png" alt="" />
+						</div>
 					</div>
 				</div>
 			</div>
 
 			<div class="footer">
-				<p>copyright@ 2021</p>
+				<p>copyright@ 2021.designed by Afia Akter</p>
 			</div>
 		</div>
+
+		<script>
+			var icon = document.getElementById("headicon");
+			icon.onclick = function () {
+				document.body.classList.toggle("dark-theme");
+				if (document.body.classList.contains("dark-theme")) {
+					icon.src = "assets/images/sun.jpg";
+				} else {
+					icon.src = "assets/images/moon.png";
+				}
+			};
+			
+		</script>
 	</body>
 </html>
